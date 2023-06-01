@@ -1,0 +1,6 @@
+venv
+.idea
+core/__pycache__/
+core/migrations/__pycache__/
+db.sqlite3
+dj_api/__pycache__/
