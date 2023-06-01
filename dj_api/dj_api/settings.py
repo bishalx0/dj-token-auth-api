@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 1  # make sure SITE_ID is set
 
 # Application definition
 
@@ -41,7 +42,14 @@ INSTALLED_APPS = [
     "authentication",
 
     "rest_framework",  # Third party app
-    "rest_framework.authtoken"
+    "rest_framework.authtoken",
+    
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+
+    "dj_rest_auth",
+    "dj_rest_auth.registration",
 ]
 
 MIDDLEWARE = [
